@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecryption_Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="darken"></div>
+    <header>
+        <ul>
+            <li><input type="radio" checked id="caesarBtn">Caesar</input></li>
+            <li><input type="radio" id="vigenereBtn">Vigenere</input><span style="font-size: 10px;"><i> (Feature coming soonTM)</i></span></li>
+        </ul>
+    </header>
+    <main>
+        <section id="caesar" class="">
+            <h1>CAESAR ENCRYPTION</h1>
+            <form>
+                <label for="plainText">Plaintext:</label>
+                <textarea name="plainText" id="caesarPlainTextArea" cols="30" rows="10"></textarea>
+                <button type="button" id="encryptBtn">Encrypt</button>
+                <label for="shiftAmount" class="keyShifts">Key:</label>
+                <input type="number" name="shifAmount" id="caesarEncryptKey" class="keyShifts">
+                <label for="cipheredText">Ciphered Text</label>
+                <textarea name="cipheredText" id="caesarCipheredTextArea" cols="30" rows="10"></textarea>
+                <button type="button" id="decryptBtn">Decrypt</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
